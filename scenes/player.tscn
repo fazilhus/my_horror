@@ -22,3 +22,8 @@ shape = SubResource("ConvexPolygonShape3D_0mx1v")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.509422, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Pivot"]
+
+[node name="Hand" type="Node3D" parent="CharacterBody3D"]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CharacterBody3D/Hand"]
+omni_range = 7.0
